@@ -6,13 +6,12 @@ function preload() {
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    
+
     rectMode(CENTER);
     angleMode(DEGREES);
-    
+
     //create Audio output
     var mic = new p5.AudioIn();
     music.play();
+    mic.start();
 }
-
-

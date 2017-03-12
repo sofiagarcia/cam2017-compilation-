@@ -1,13 +1,5 @@
-function setup() {
-  angleMode(DEGREES);
-  rectMode(CENTER);
-  createCanvas(400, 400);
-  mic = new p5.AudioIn();
-  mic.start();
-}
-
-function draw() {
-
+function Sofia = {
+    this.draw = function() {
 
   var vol = mic.getLevel();
   // console.log(vol);
@@ -57,4 +49,6 @@ function draw() {
   line(190, y, 190, y + 20);
 
 
+
+    }
 }
