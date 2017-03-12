@@ -1,13 +1,7 @@
-function setup() {
-  rectMode(CENTER);
-  createCanvas(400, 400);
+function Angelinne() {
 
-  mic = new p5.AudioIn();
-  mic.start();
-}
-
-function draw() {
-  var vol = mic.getLevel();
+    this.draw() = {
+    var vol = mic.getLevel();
   //console.log(vol);
   background(255);
   var eyeSizeX = map(vol, 0, 1, 35, 100);
@@ -18,7 +12,7 @@ function draw() {
   var x = 200;
 
   //headhair
-  fill(""#231102"");
+  fill("#231102");
   ellipse(x, y+20, 250, 250);
   ellipse(x-50, y+50, 200, 200);
   ellipse(x+50, y+50, 200, 200);
@@ -41,7 +35,7 @@ function draw() {
   ellipse(x-10, y-70, 150, 60);
 
   //fleek
-  fill(""#331105"");
+  fill("#331105");
   ellipse(150, y-50, 50, 10);
   ellipse(250, y-50, 50, 10);
 
@@ -52,10 +46,12 @@ function draw() {
   ellipse(x+50, y-25, eyeSizeX, eyeSizeY);
 
   //mouth
-  fill(""#471908"");
+  fill("#471908");
   ellipse(x, y+50, mouthSizeX, mouthSizeY);
- // rect(200, 250, 75, 75);
 
-  //idek
+    }
+  
 
+    
 }
+
