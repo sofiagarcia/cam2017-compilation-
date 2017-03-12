@@ -1,15 +1,6 @@
-var mic;
-
-function setup() {
-  rectMode(CENTER);
-  createCanvas(400,400);
-  mic = new p5.AudioIn();
-  mic.start();
 
 
-}
-
-function draw()  {
+function sanitago()  {
  background(0);
 var vol= mic.getLevel();
 var eyeSize = map(vol, 0,1,30,55)

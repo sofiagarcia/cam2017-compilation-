@@ -1,8 +1,5 @@
-function Angelinne() {
+function angelinne() {
 
-    this.draw() = {
-    var vol = mic.getLevel();
-  //console.log(vol);
   background(255);
   var eyeSizeX = map(vol, 0, 1, 35, 100);
   var eyeSizeY = map(vol, 0, 1, 25, 75);
@@ -24,10 +21,10 @@ function Angelinne() {
 
   //head
   //fill = map(vol, 0, 1, ""#f4d8be"", ""#eda6a6"") ;
-  red = map(vol, 0, 1, 244, 219);
-  green = map(vol, 0, 1, 216, 129);
-  blue = map(vol, 0, 1, 190, 122)
-  fill(red, green, blue);
+  r = map(vol, 0, 1, 244, 219);
+  g = map(vol, 0, 1, 216, 129);
+  b = map(vol, 0, 1, 190, 122)
+  fill(r, g, b);
   ellipse(x, y, 200, 200);
 
   //bang
@@ -48,10 +45,4 @@ function Angelinne() {
   //mouth
   fill("#471908");
   ellipse(x, y+50, mouthSizeX, mouthSizeY);
-
-    }
-  
-
-    
 }
-

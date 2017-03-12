@@ -1,20 +1,11 @@
-var mic;
 
-function setup() {
-  rectMode(CENTER);
-  createCanvas(windowWidth, windowHeight);
-  angleMode(DEGREES);
-  mic = new p5.AudioIn();
-  mic.start();
-}
-
-function draw() {
+function emma() {
 
   background(250, 0,127);
 
-  var eyeSize = map(mic.getLevel(),0,1,30,100);
-  var mouthSize = map(mic.getLevel(),0,1, 75, 150);
-  var y = map(mic.getLevel(), 0, 1, windowHeight/2, windowHeight/14);
+  var eyeSize = map(vol,0,1,30,100);
+  var mouthSize = map(vol,0,1, 75, 150);
+  var y = map(vol, 0, 1, windowHeight/2, windowHeight/14);
 
   //body
   fill(250,250,250);

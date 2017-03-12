@@ -1,16 +1,8 @@
-var mic;
 
-function setup() {
-  rectMode(CENTER)
-  createCanvas(400, 400);
-  mic = new p5.AudioIn();
-  mic.start();
-}
-
-function draw() {
+function nidia() {
+  angleMode(RADIANS);
   background(192);
-  var vol = mic.getLevel();
-  console.log(vol);
+
   var eyeSize = map(vol, 0, 1, 30, 100);
   var mouthSize = map(vol, 0, 1, 30, 100);
   var mouthSize2 = map(vol, 0, 1, 20, 200);
