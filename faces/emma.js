@@ -1,11 +1,10 @@
 
 function emma() {
-
+  strokeWeight(1);
   background(250, 0,127);
-
   var eyeSize = map(vol,0,1,30,100);
   var mouthSize = map(vol,0,1, 75, 150);
-  var y = map(vol, 0, 1, windowHeight/2, windowHeight/14);
+  var y = map(vol, 0, 1, 150, 350);
 
   //body
   fill(250,250,250);

@@ -7,7 +7,7 @@ function kai() {
   var eyeSize = map(vol,0, 1, 30, 100);
 
   var mouthSize = map(vol,0 ,1 ,85 ,375);
-  var y = map(vol, 0, 1, windowHeight/2, windowHeight/2+100 );
+  var y = map(vol, 0, 1, 150, 350);
   //head
   fill("#791DDB");
   ellipse(200, y, 200, 200);

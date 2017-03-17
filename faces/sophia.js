@@ -1,6 +1,6 @@
 function sophia() {
   var eyeSize = map(vol,0,1,30,100)
-  var mouthSize = map(vol,0,1,30,100)
+  var mouthSize = map(vol,0,1,30,200)
 
    noStroke();
 

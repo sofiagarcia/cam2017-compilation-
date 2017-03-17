@@ -3,7 +3,7 @@ function jenna() {
 	background(166, 200, 255);
 
 	var eyeSize = map(vol, 0, 1, 30, 100);
-	var mouthSize = map(vol, 0, 1, 30, 50);
+	var mouthSize = map(vol, 0, 1, 30, 150);
 	var y = 200;
 	var w = map(vol, 0, 1, 30, 75);
 	var tophatX = 15;
